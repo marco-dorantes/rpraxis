@@ -53,6 +53,21 @@ namespace Specification
     }
 
     [TestMethod, TestCategory("SimpleText")]
+    public void EnclosingQuotesAndNewLine()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:kant,Immanuel Kant,\"-- ? T::Z\",1516850226436,\"For sure. \r\nShoot!\"";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("For sure. \r\nShoot!", record.ContentXml);
+    }
+
+    [TestMethod, TestCategory("SimpleText")]
     public void InsideQuotes()
     {
       //Arrange
@@ -95,6 +110,21 @@ namespace Specification
       //Assert
       Assert.IsNotNull(record);
       Assert.AreEqual<string>("<ss type=\"\"surprised\"\">:O</ss>", record.ContentXml);
+    }
+
+    [TestMethod, TestCategory("XML_Emoticon")]
+    public void Smile()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:hume,David Hume,\"-- ? T::Z\",1529850227436,\"I know, there is reason, razón in Spanish, <ss type=\"\"smile\"\">:)</ss>\"";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("I know, there is reason, razón in Spanish, <ss type=\"\"smile\"\">:)</ss>", record.ContentXml);
     }
   }
 }
