@@ -81,5 +81,20 @@ namespace Specification
       Assert.IsNotNull(record);
       Assert.AreEqual<string>("Look, that is deep water.", record.ContentXml);
     }
+
+    [TestMethod, TestCategory("XML_Emoticon")]
+    public void Surprised()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:hume,David Hume,\"-- ? T::Z\",1529850227436,\"<ss type=\"\"surprised\"\">:O</ss>\"";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("<ss type=\"\"surprised\"\">:O</ss>", record.ContentXml);
+    }
   }
 }
