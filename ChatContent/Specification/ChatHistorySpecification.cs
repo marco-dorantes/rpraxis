@@ -126,5 +126,50 @@ namespace Specification
       Assert.IsNotNull(record);
       Assert.AreEqual<string>("I know, there is reason, razón in Spanish, <ss type=\"\"smile\"\">:)</ss>", record.ContentXml);
     }
+
+    [TestMethod, TestCategory("Text_HTML")]
+    public void AnchorAndNewline()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:kant,Immanuel Kant,\"--?T::Z\",1529850327436,\"Ok. Let us read, for example, this:\r\n<a href=\"\"https://plato.stanford.edu/entries/truth/\"\">https://plato.stanford.edu/entries/truth/</a>\"";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("Ok. Let us read, for example, this:\r\n<a href=\"\"https://plato.stanford.edu/entries/truth/\"\">https://plato.stanford.edu/entries/truth/</a>", record.ContentXml);
+    }
+
+    [TestMethod, TestCategory("Text_HTML")]
+    public void Anchor()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:hume,David Hume,\"--?T::Z\",1516852436904,\"And all that, in Spanish, here <a href=\"\"http://www.filosofia.org/filomat/index.htm\"\">http://www.filosofia.org/filomat/index.htm</a>\"";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("And all that, in Spanish, here <a href=\"\"http://www.filosofia.org/filomat/index.htm\"\">http://www.filosofia.org/filomat/index.htm</a>", record.ContentXml);
+    }
+
+    [TestMethod, TestCategory("Text_HTML")]
+    public void CharacterEntity()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:hume,David Hume,\"--?T::Z\",1516952436904,But, is &quot;truth&quot; directly related to &quot;freedom&quot;?";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("But, is &quot;truth&quot; directly related to &quot;freedom&quot;?", record.ContentXml);
+    }
   }
 }
