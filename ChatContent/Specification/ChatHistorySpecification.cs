@@ -171,5 +171,20 @@ namespace Specification
       Assert.IsNotNull(record);
       Assert.AreEqual<string>("But, is &quot;truth&quot; directly related to &quot;freedom&quot;?", record.ContentXml);
     }
+
+    [TestMethod, TestCategory("XML_Image")]
+    public void Image()
+    {
+      //Arrange
+      string chat_entry = "live:kant,Immanuel Kant,live:hume,David Hume,\"--?T::Z\",1516952436904,\"<URIObject type=\"\"Picture.1\"\" uri=\"\"https://api.asm.skype.com/v1/objects/0-cus-d3-2e526243d3918ed444a18835755c3635\"\" url_thumbnail=\"\"https://api.asm.skype.com/v1/objects/0-cus-d3-2e526243d3918ed444a18835755c3635/views/imgt1\"\"><Title/> <Description/> <a href=\"\"https://login.skype.com/login/sso?go=xmmfallback?pic=0-cus-d3-2e526243d3918ed444a18835755c3635\"\">https://login.skype.com/login/sso?go=xmmfallback?pic=0-cus-d3-2e526243d3918ed444a18835755c3635</a><OriginalName v=\"\"C:\\Users\\Hume\\AppData\\Local\\Packages\\Microsoft.SkypeApp_kzf8qxf38zg5c\\LocalState\\44840ec5-a5ee-4d31-9e64-abaa85bc3a1c.jpg\"\"/><meta type=\"\"photo\"\" originalName=\"\"C:\\Users\\Hume\\AppData\\Local\\Packages\\Microsoft.SkypeApp_kzf8qxf38zg5c\\LocalState\\44840ec5-a5ee-4d31-9e64-abaa85bc3a1c.jpg\"\"/></URIObject>\"";
+      var parser = new ChatHistoryModule.ChatRecordParser();
+
+      //Act
+      var record = parser.Parse(chat_entry);
+
+      //Assert
+      Assert.IsNotNull(record);
+      Assert.AreEqual<string>("<URIObject type=\"\"Picture.1\"\" uri=\"\"https://api.asm.skype.com/v1/objects/0-cus-d3-2e526243d3918ed444a18835755c3635\"\" url_thumbnail=\"\"https://api.asm.skype.com/v1/objects/0-cus-d3-2e526243d3918ed444a18835755c3635/views/imgt1\"\"><Title/> <Description/> <a href=\"\"https://login.skype.com/login/sso?go=xmmfallback?pic=0-cus-d3-2e526243d3918ed444a18835755c3635\"\">https://login.skype.com/login/sso?go=xmmfallback?pic=0-cus-d3-2e526243d3918ed444a18835755c3635</a><OriginalName v=\"\"C:\\Users\\Hume\\AppData\\Local\\Packages\\Microsoft.SkypeApp_kzf8qxf38zg5c\\LocalState\\44840ec5-a5ee-4d31-9e64-abaa85bc3a1c.jpg\"\"/><meta type=\"\"photo\"\" originalName=\"\"C:\\Users\\Hume\\AppData\\Local\\Packages\\Microsoft.SkypeApp_kzf8qxf38zg5c\\LocalState\\44840ec5-a5ee-4d31-9e64-abaa85bc3a1c.jpg\"\"/></URIObject>", record.ContentXml);
+    }
   }
 }
