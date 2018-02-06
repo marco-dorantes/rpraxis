@@ -6,6 +6,6 @@ namespace Museum.Service.DataAccess.LocalStore
   {
     const string SculptureFile = "Sculpture.csv";
 
-    public IDataReader GetSculptures(string filter) => new LocalFile(SculptureFile);
+    public IDataReader GetSculptures(string filter) => new LocalFile(SculptureFile, filter);
   }
 }

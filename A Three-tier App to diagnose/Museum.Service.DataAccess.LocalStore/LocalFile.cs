@@ -14,13 +14,22 @@ namespace Museum.Service.DataAccess.LocalStore
     private StreamReader reader;
     private string[] fields;
 
-    public LocalFile(string filename)
+    public LocalFile(string filename, string call)
     {
-      file = new FileInfo(filename);
-      if (!file.Exists)
+      var basefile = new FileInfo(filename);
+      if (!basefile.Exists)
       {
         throw new Exception($"{nameof(LocalFile)} not found: {filename}");
       }
+      string newname = null;
+      do
+      {
+        var ms = DateTime.Now.TimeOfDay.TotalMilliseconds;
+        newname = $"{Path.GetFileNameWithoutExtension(basefile.Name)}_{call}_at_{ms}.txt";
+        file = new FileInfo(newname);
+        newname = file.Exists ? null : file.FullName;
+      } while (string.IsNullOrWhiteSpace(newname));
+      basefile.CopyTo(file.FullName, true);
       reader = file.OpenText();
     }
 
