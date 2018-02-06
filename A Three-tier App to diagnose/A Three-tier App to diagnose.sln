@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Service.DataAccess.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Service.Host", "Museum.Service.Host\Museum.Service.Host.csproj", "{DD6D90F1-95C5-47CD-96FB-B12732C363BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Service.DataAccess.SqlStore", "Museum.Service.DataAccess.SqlStore\Museum.Service.DataAccess.SqlStore.csproj", "{C45F7841-2EA6-426B-A0AD-5601FCCDDC39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{DD6D90F1-95C5-47CD-96FB-B12732C363BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD6D90F1-95C5-47CD-96FB-B12732C363BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD6D90F1-95C5-47CD-96FB-B12732C363BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45F7841-2EA6-426B-A0AD-5601FCCDDC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45F7841-2EA6-426B-A0AD-5601FCCDDC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45F7841-2EA6-426B-A0AD-5601FCCDDC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45F7841-2EA6-426B-A0AD-5601FCCDDC39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{A4508D52-9884-413C-802C-B7F37A119635} = {D6F17033-AF3A-45C2-864B-A2F66D5C793F}
 		{6E4790B9-2DF6-40B8-9510-3822624679BF} = {89BA8AC9-F611-4910-9FE1-6DD81B04C575}
 		{DD6D90F1-95C5-47CD-96FB-B12732C363BC} = {39C360DC-3713-4FA6-A347-9413FB081F66}
+		{C45F7841-2EA6-426B-A0AD-5601FCCDDC39} = {E239D104-0A2A-4766-8FB0-72869D47E1FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4242096-6977-479D-972E-BE43EF27908A}
