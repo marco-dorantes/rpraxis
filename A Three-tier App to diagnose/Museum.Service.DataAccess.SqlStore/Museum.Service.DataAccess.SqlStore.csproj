@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD6D90F1-95C5-47CD-96FB-B12732C363BC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Museum.Service.Host</RootNamespace>
-    <AssemblyName>Museum.Service.Host</AssemblyName>
+    <ProjectGuid>{C45F7841-2EA6-426B-A0AD-5601FCCDDC39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Museum.Service.DataAccess.SqlStore</RootNamespace>
+    <AssemblyName>Museum.Service.DataAccess.SqlStore</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,28 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MuseumSqlStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Museum.Service.Contract\Museum.Service.Contract.csproj">
-      <Project>{5bf9b6cb-dcf6-4052-8c87-9097b6f3d7ce}</Project>
-      <Name>Museum.Service.Contract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Museum.Service.DataAccess.LocalStore\Museum.Service.DataAccess.LocalStore.csproj">
-      <Project>{6e4790b9-2df6-40b8-9510-3822624679bf}</Project>
-      <Name>Museum.Service.DataAccess.LocalStore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Museum.Service.DataAccess.SqlStore\Museum.Service.DataAccess.SqlStore.csproj">
-      <Project>{c45f7841-2ea6-426b-a0ad-5601fccddc39}</Project>
-      <Name>Museum.Service.DataAccess.SqlStore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Museum.Service.ServiceClass\Museum.Service.ServiceClass.csproj">
-      <Project>{01d83fb4-4eb6-4470-8107-60092b680b8d}</Project>
-      <Name>Museum.Service.ServiceClass</Name>
+    <ProjectReference Include="..\Museum.Service.DataAccess\Museum.Service.DataAccess.csproj">
+      <Project>{a4508d52-9884-413c-802c-b7f37a119635}</Project>
+      <Name>Museum.Service.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

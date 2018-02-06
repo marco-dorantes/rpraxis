@@ -5,12 +5,12 @@ namespace ConsoleApplication
 {
   class Program
   {
-    static void run()
+    static void run(int k)
     {
       try
       {
         var sculpture_client = new ConsoleApplication.SculptureProxy("SculptureService");
-        var sculptures = sculpture_client.Proxy.GetSculptures(null);
+        var sculptures = sculpture_client.Proxy.GetSculptures($"{k}");
         foreach (var sculpture in sculptures)
         {
           WriteLine($"{sculpture.ID,5} {sculpture.Name,30} {sculpture.Artist,24} {sculpture.When,20}");
@@ -23,7 +23,7 @@ namespace ConsoleApplication
     }
     static void Main(string[] args)
     {
-      for (int k = 0; k < 2049*4; ++k) run();
+      for (int k = 0; k < 2049*5; ++k) run(k);
     }
   }
 }

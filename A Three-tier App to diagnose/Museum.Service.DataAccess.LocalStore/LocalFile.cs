@@ -11,19 +11,28 @@ namespace Museum.Service.DataAccess.LocalStore
   class LocalFile : IDataReader
   {
     private FileInfo file;
+    private FileInfo basefile;
     private StreamReader reader;
     private string[] fields;
 
-    public LocalFile(string filename)
+    public LocalFile(string filename, string call)
     {
-      file = new FileInfo(filename);
-      if (!file.Exists)
+      basefile = new FileInfo(filename);
+      if (!basefile.Exists)
       {
         throw new Exception($"{nameof(LocalFile)} not found: {filename}");
       }
-      reader = file.OpenText();
+      string newname = null;
+      do
+      {
+        var ms = DateTime.Now.TimeOfDay.TotalMilliseconds;
+        newname = $"{Path.GetFileNameWithoutExtension(basefile.Name)}_{call}_at_{ms}.txt";
+        file = new FileInfo(newname);
+        newname = file.Exists ? null : file.FullName;
+      } while (string.IsNullOrWhiteSpace(newname));
+      basefile.CopyTo(file.FullName, true);
+      reader = new StreamReader(new FileStream(file.FullName, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite, 2048, FileOptions.RandomAccess));
     }
-
     public object this[int i] => throw new NotImplementedException();
 
     public object this[string name] => throw new NotImplementedException();
