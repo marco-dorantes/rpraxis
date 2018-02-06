@@ -5,7 +5,7 @@ namespace ConsoleApplication
 {
   class Program
   {
-    static void Main(string[] args)
+    static void run()
     {
       try
       {
@@ -20,6 +20,10 @@ namespace ConsoleApplication
       {
         WriteLine($"{ex.GetType().FullName}: {ex.Message}");
       }
+    }
+    static void Main(string[] args)
+    {
+      for (int k = 0; k < 2049*4; ++k) run();
     }
   }
 }

@@ -59,9 +59,6 @@
     <Compile Include="SculptureService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Museum.Service.Contract\Museum.Service.Contract.csproj">
       <Project>{5bf9b6cb-dcf6-4052-8c87-9097b6f3d7ce}</Project>
       <Name>Museum.Service.Contract</Name>
