@@ -30,11 +30,6 @@ namespace Museum.Service.DataAccess.LocalStore
         file = new FileInfo(newname);
         newname = file.Exists ? null : file.FullName;
       } while (string.IsNullOrWhiteSpace(newname));
-      Name = newname;
-    }
-    public string Name { get; private set; }
-    public void Prepare()
-    {
       basefile.CopyTo(file.FullName, true);
       reader = new StreamReader(new FileStream(file.FullName, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite, 2048, FileOptions.RandomAccess));
     }
