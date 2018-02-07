@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph vs="http://schemas.microsoft.com/vs/2009/dgml" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="ConsoleApplication" Bounds="293.67,-410.08,122.66,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.Contract" Bounds="267.116666666667,123.88,153.766666666667,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.DataAccess" Bounds="779.728333333333,148.88,168.543333333333,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.DataAccess.LocalStore" Bounds="1011.8670690918,66.9199977111816,225.913333333333,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.DataAccess.SqlStore" Bounds="766.843735758464,69.9199977111816,215.023333333333,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.Host" Bounds="627.365,-136.137156945749,133.27,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.Processor" Bounds="572.974166666667,71.9199977111816,159.693333333333,25.96" UseManualLocation="True" />
+    <Node Id="Museum.Service.ServiceClass" Bounds="557.756666666667,-76.04,172.486666666667,25.96" UseManualLocation="True" />
+    <Node Id="Specification" Bounds="933.37,-510.422231327436,87.2600000000001,25.96" UseManualLocation="True" />
+    <Node Id="TypeClassMapper" Bounds="452.583333333333,167.88,112.833333333333,25.96" />
+  </Nodes>
+  <Links>
+    <Link Source="ConsoleApplication" Target="Museum.Service.Contract" Bounds="344.452766761819,-384.119990844727,10.2798498128668,499.001896805333" />
+    <Link Source="Museum.Service.DataAccess.LocalStore" Target="Museum.Service.DataAccess" Bounds="913.892704484816,92.8799977111816,169.624394250832,53.3019581371326" />
+    <Link Source="Museum.Service.DataAccess.SqlStore" Target="Museum.Service.DataAccess" Bounds="866.872599266783,95.8799977111816,5.78050935714464,44.0764170102331" />
+    <Link Source="Museum.Service.Host" Target="Museum.Service.ServiceClass" Bounds="660.555335565841,-110.177161712646,22.6454855460912,27.2185881384968" />
+    <Link Source="Museum.Service.Processor" Target="Museum.Service.Contract" Bounds="428.109863389663,97.8702755920612,147.622977366413,24.8379932338523" />
+    <Link Source="Museum.Service.Processor" Target="Museum.Service.DataAccess" Bounds="688.438108282304,97.8799977111816,131.488633116006,47.9183896098448" />
+    <Link Source="Museum.Service.Processor" Target="TypeClassMapper" Bounds="535.940436681229,97.8799977111816,97.4265183464827,65.0048380210073" />
+    <Link Source="Museum.Service.ServiceClass" Target="Museum.Service.Contract" Bounds="370.967163390804,-50.080001373291,253.555016778159,168.969078821812" />
+    <Link Source="Museum.Service.ServiceClass" Target="Museum.Service.Processor" Bounds="644.773792049909,-50.080001373291,6.73761885397221,113.015950166127" />
+    <Link Source="Specification" Target="ConsoleApplication" Bounds="425.215141155981,-490.403768510273,508.154858844019,81.9765361621665" />
+    <Link Source="Specification" Target="Museum.Service.Contract" Bounds="363.310769911583,-484.462245483398,600.735878433095,601.971745193663" />
+    <Link Source="Specification" Target="Museum.Service.DataAccess.LocalStore" Bounds="980.323422188661,-484.462245483398,138.94452260873,542.663495963405" />
+    <Link Source="Specification" Target="Museum.Service.Processor" Bounds="667.231811523438,-484.462249755859,302.778869628906,549.040870666504" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="vs" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

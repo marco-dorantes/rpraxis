@@ -1,0 +1,12 @@
+Package,Abstractness,Instability,DistanceToMainSequence
+I,0,1,0
+A,1,0,0
+Museum.Service.Contract,0.5,0.2,0.3
+Museum.Service.DataAccess,1,0.25,0.25
+Museum.Service.DataAccess.LocalStore,0,0.6666666666666666666666666667,0.3333333333333333333333333333
+Museum.Service.DataAccess.SqlStore,0,1,0
+Museum.Service.Processor,1,0.6666666666666666666666666667,0.6666666666666666666666666667
+TypeClassMapper,0.0555555555555555555555555556,0.5,0.4444444444444444444444444444
+Museum.Service.ServiceClass,0,0.75,0.25
+Specification,0,1,0
+Museum.Service.Host,0,1,0
