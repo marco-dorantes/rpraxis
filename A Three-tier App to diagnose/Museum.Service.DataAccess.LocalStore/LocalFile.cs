@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Museum.Service.DataAccess.LocalStore
 {
@@ -14,7 +10,7 @@ namespace Museum.Service.DataAccess.LocalStore
     private StreamReader reader;
     private string[] fields;
 
-    public LocalFile(string filename, string call)
+    public LocalFile(string filename, string filter)
     {
       file = new FileInfo(filename);
       if (!file.Exists)
