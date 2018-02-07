@@ -1,0 +1,324 @@
+
+Dependency Command-line Tool — part of Toolset for the Software Designer.
+Copyright © Textum 2009 - 2016. Marco A. Dorantes. Version 2.2.0.0
+
+Command-line: /label=DAG "/mappings=-NET System mscorlib -ENTLIB Microsoft" /folders C:\tep
+
+Label:	DAG
+Log:	DAG-DAG-20180206-122022-671.log
+Visio:	DAG-DAG-20180206-122022-671.vdx
+Excel:	DAG-DAG-20180206-122022-671.csv
+DGML:	DAG-DAG-20180206-122022-671.dgml
+File Include:
+	*.dll
+	*.exe
+File Exclude:
+Folders:
+	C:\tep
+Folder Excludes:
+	obj
+Mappings
+	Mapping:NET
+		Mapped:System
+		Mapped:mscorlib
+	Mapping:ENTLIB
+		Mapped:Microsoft
+
+
+
+*** Scanning for dependencies ***
+
+
+Scanning [C:\tep]...
+  File included: C:\tep\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll [Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  Assembly mapped: ENTLIB <- [Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  File included: C:\tep\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll [Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  Assembly mapped: ENTLIB <- [Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  File included: C:\tep\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll [Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  Assembly mapped: ENTLIB <- [Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  File included: C:\tep\Microsoft.VisualStudio.TestPlatform.TestFramework.dll [Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  Assembly mapped: ENTLIB <- [Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  File included: C:\tep\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll [Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+  Assembly mapped: ENTLIB <- [Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Xml.ReaderWriter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Resources.ResourceManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Text.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Diagnostics.Tools, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System.Reflection.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference mapping included: NET <- [System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: NET <- [System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+  File included: C:\tep\Museum.Service.Contract.dll [Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	ReflectionTypeLoad OK for Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+  File included: C:\tep\Museum.Service.DataAccess.dll [Museum.Service.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	ReflectionTypeLoad OK for Museum.Service.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+  File included: C:\tep\Museum.Service.DataAccess.LocalStore.dll [Museum.Service.DataAccess.LocalStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	AssemblyResolve for System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 Loaded OK
+	AssemblyResolve for Museum.Service.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null Loaded OK
+	ReflectionTypeLoad OK for Museum.Service.DataAccess.LocalStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference included: Museum.Service.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  File included: C:\tep\Museum.Service.Processor.dll [Museum.Service.Processor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	ReflectionTypeLoad OK for Museum.Service.Processor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference included: Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference included: TypeClassMapper, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null
+	Reference included: Museum.Service.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  File included: C:\tep\Museum.Service.ServiceClass.dll [Museum.Service.ServiceClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	AssemblyResolve for Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null Loaded OK
+	ReflectionTypeLoad OK for Museum.Service.ServiceClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference included: Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference included: Museum.Service.Processor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  File included: C:\tep\Specification.dll [Specification, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	ReflectionTypeLoad OK for Specification, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference mapping included: ENTLIB <- [Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]
+	Reference included: ConsoleApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference included: Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference included: Museum.Service.Processor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference included: Museum.Service.DataAccess.LocalStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  File included: C:\tep\TypeClassMapper.dll [TypeClassMapper, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null]
+	AssemblyResolve for System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a Loaded OK
+	ReflectionTypeLoad OK for TypeClassMapper, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+  File included: C:\tep\ConsoleApplication.exe [ConsoleApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	AssemblyResolve for System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 Loaded OK
+	ReflectionTypeLoad OK for ConsoleApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference included: Museum.Service.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  File included: C:\tep\Museum.Service.Host.exe [Museum.Service.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+	ReflectionTypeLoad OK for Museum.Service.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+	Reference mapping included: NET <- [mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+	Reference included: Museum.Service.ServiceClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+
+*** Calculating stability metrics ***
+
+
+*** DAG Summary ***
+
+Node count:	34
+Vertex count:	11
+Edge count:	23
+Vertexes:
+  ENTLIB
+    Efferent couplings: 1
+	NET
+    Afferent couplings: 1
+	Specification
+  NET
+    Efferent couplings: 0
+    Afferent couplings: 10
+	ENTLIB
+	Museum.Service.Contract
+	Museum.Service.DataAccess
+	Museum.Service.DataAccess.LocalStore
+	Museum.Service.Processor
+	Museum.Service.ServiceClass
+	Specification
+	TypeClassMapper
+	ConsoleApplication
+	Museum.Service.Host
+  Museum.Service.Contract: Abstractness:0.50 Instability:0.20 DistanceToMainSequence:0.30
+    Efferent couplings: 1
+	NET
+    Afferent couplings: 4
+	Museum.Service.Processor
+	Museum.Service.ServiceClass
+	Specification
+	ConsoleApplication
+  Museum.Service.DataAccess: Abstractness:1.00 Instability:0.33 DistanceToMainSequence:0.33
+    Efferent couplings: 1
+	NET
+    Afferent couplings: 2
+	Museum.Service.DataAccess.LocalStore
+	Museum.Service.Processor
+  Museum.Service.DataAccess.LocalStore: Abstractness:0.00 Instability:0.67 DistanceToMainSequence:0.33
+    Efferent couplings: 2
+	NET
+	Museum.Service.DataAccess
+    Afferent couplings: 1
+	Specification
+  Museum.Service.Processor: Abstractness:1.00 Instability:0.67 DistanceToMainSequence:0.67
+    Efferent couplings: 4
+	NET
+	Museum.Service.Contract
+	TypeClassMapper
+	Museum.Service.DataAccess
+    Afferent couplings: 2
+	Museum.Service.ServiceClass
+	Specification
+  TypeClassMapper: Abstractness:0.06 Instability:0.50 DistanceToMainSequence:0.44
+    Efferent couplings: 1
+	NET
+    Afferent couplings: 1
+	Museum.Service.Processor
+  Museum.Service.ServiceClass: Abstractness:0.00 Instability:0.75 DistanceToMainSequence:0.25
+    Efferent couplings: 3
+	NET
+	Museum.Service.Contract
+	Museum.Service.Processor
+    Afferent couplings: 1
+	Museum.Service.Host
+  Specification: Abstractness:0.00 Instability:1.00 DistanceToMainSequence:0.00
+    Efferent couplings: 6
+	NET
+	ENTLIB
+	ConsoleApplication
+	Museum.Service.Contract
+	Museum.Service.Processor
+	Museum.Service.DataAccess.LocalStore
+    Afferent couplings: 0
+  ConsoleApplication
+    Efferent couplings: 2
+	NET
+	Museum.Service.Contract
+    Afferent couplings: 1
+	Specification
+  Museum.Service.Host: Abstractness:0.00 Instability:1.00 DistanceToMainSequence:0.00
+    Efferent couplings: 2
+	NET
+	Museum.Service.ServiceClass
+    Afferent couplings: 0
+
+*** Writing results...Done. ***
+
+
+*** Dependency.exe completed successfully. ***
+
