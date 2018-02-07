@@ -11,6 +11,7 @@ namespace ConsoleApplication
       {
         var sculpture_client = new ConsoleApplication.SculptureProxy("SculptureService");
         var sculptures = sculpture_client.Proxy.GetSculptures($"{k}");
+        WriteLine($"[{k,6}]");
         foreach (var sculpture in sculptures)
         {
           WriteLine($"{sculpture.ID,5} {sculpture.Name,30} {sculpture.Artist,24} {sculpture.When,20}");
