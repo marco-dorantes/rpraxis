@@ -27,6 +27,7 @@ namespace Museum.Service.DataAccess.LocalStore
         newname = file.Exists ? null : file.FullName;
       } while (string.IsNullOrWhiteSpace(newname));
       Name = newname;
+      Prepare();
     }
     public string Name { get; private set; }
     public void Prepare()
