@@ -24,7 +24,11 @@ namespace ConsoleApplication
     }
     static void Main(string[] args)
     {
-      for (int k = 0; k < 2049*5; ++k) run(k);
+      for (int k = 0; k < 2049 * 5; ++k)
+      {
+        WriteLine("Press ENTER to continue");ReadLine();
+        run(k);
+      }
     }
   }
 }
