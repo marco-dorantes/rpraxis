@@ -19,7 +19,7 @@ namespace Museum.Service.DataAccess.SqlStore
       conn.Open();
       var cmd = conn.CreateCommand();
       cmd.CommandType = CommandType.Text;
-      cmd.CommandText = "SELECT [ID],[Name],[Artist],[When] FROM [DB1SOB].[dbo].[ctest]";
+      cmd.CommandText = "SELECT [ID],[Name],[Artist],[When] FROM ctest";
       return cmd.ExecuteReader();
     }
   }
