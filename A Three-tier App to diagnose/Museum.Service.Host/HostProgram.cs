@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace Museum.Service.Host
 {
-  class Program
+  class HostProgram
   {
     static void Main(string[] args)
     {
